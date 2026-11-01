@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#e1af7e", "secondary": "#f0bd8b", "inverse-on-surface": "#32302e", "tertiary-container": "#613435", "on-primary-container": "#ff8c82", "on-surface-variant": "#dfbfbc", "on-error": "#690005", "on-tertiary": "#4e2425", "outline-variant": "#58413f", "on-tertiary-fixed": "#341011", "on-tertiary-container": "#db9d9d", "on-primary-fixed-variant": "#891c1a", "surface-variant": "#373432", "on-secondary-fixed": "#2c1600", "tertiary-fixed": "#ffdad9", "surface-dim": "#151311", "on-error-container": "#ffdad6", "tertiary": "#f7b6b6", "on-primary": "#690007", "primary-fixed-dim": "#ffb4ac", "on-secondary": "#482904", "secondary-fixed-dim": "#f0bd8b", "background": "#151311", "error-container": "#93000a", "primary-container": "#811515", "surface-container": "#211f1d", "surface-container-low": "#1d1b19", "inverse-surface": "#e7e1de", "surface-container-lowest": "#100e0c", "surface-container-high": "#2c2927", "primary": "#ffb4ac", "surface-bright": "#3b3936", "on-primary-fixed": "#410002", "on-background": "#e7e1de", "surface": "#151311", "secondary-container": "#65411a", "primary-fixed": "#ffdad6", "outline": "#a78a87", "on-surface": "#e7e1de", "on-tertiary-fixed-variant": "#683a3a", "on-secondary-fixed-variant": "#623f18", "error": "#ffb4ab", "inverse-primary": "#aa342f", "tertiary-fixed-dim": "#f7b6b6", "surface-container-highest": "#373432", "surface-tint": "#ffb4ac", "secondary-fixed": "#ffdcbd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "3.5rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "gutter-mobile": "0.875rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "gutter": "1.5rem", "gutter-tablet": "1.25rem" }, "fontFamily": { "title-md": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "headline-xl-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-sm": ["Space Grotesk"], "label-lg": ["Space Mono"], "title-lg": ["Space Grotesk"], "headline-lg": ["Playfair Display"], "label-sm": ["Space Mono"], "headline-xl": ["Playfair Display"], "label-md": ["Space Mono"], "headline-lg-mobile": ["Playfair Display"], "body-md": ["Space Grotesk"], "headline-md": ["Playfair Display"] }, "fontSize": { "title-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }], "headline-xl-mobile": ["3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0", "fontWeight": "500" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "700" }], "title-lg": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["3.75rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "400" }], "headline-xl": ["5.5rem", { "lineHeight": "5.75rem", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "400" }], "headline-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "headline-md": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="ROOM 129 Archival Vinyl Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WP3xFbVJ9wNJTzn-GcmwsC2-sLUOBDWvW4tyKL90WfsRFLEvgbKGdAdi80JPYinEx3A0dNQjvkJdEJ9CFBPSvbAqZRV6CVNX2OBo7SxLJg5KdOkjWtv9FkSqx5-xYOno3Cm1rgCn6V_GLgFpGk6UZINfOUTs9gR3IDPyVBVxRbSFkwxzIpDq3ogwO7pGktJeHv1GqYOZnpHyRMxmpICaV1MYStoHKlsPa9IvSafPu7"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg tracking-wider text-on-surface truncate">ROOM 129</span><span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-xs py-0.5 rounded-none shrink-0">CAT. 129-A</span></div><span class="font-label-sm text-label-sm text-on-surface-variant/75 truncate">VOL. 01 / ED. 2025 • Studio Desk</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Archive Index Trigger" class="h-11 px-space-sm flex items-center gap-space-xs bg-surface-container text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span class="font-label-sm text-label-sm uppercase hidden sm:inline">ARCHIVE</span></button><button aria-label="Now Playing Audio Scrubber" class="h-11 px-space-sm flex items-center gap-space-xs bg-primary-container text-primary hover:bg-primary-container/80 transition-colors" type="button"><span class="material-symbols-outlined text-[18px] animate-pulse">graphic_eq</span><span class="font-label-sm text-label-sm uppercase tracking-wider hidden xs:inline">SIDE A • 33⅓</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-36 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-xl gap-space-xl">
+<!-- Desk Header Narrative Banner -->
+<section class="flex flex-col gap-space-xs mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">STUDIO LOG 04 // ACTIVE SPECIMEN</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">LAT 35.6762° N • HUMIDITY 44%</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">The Curator’s Desk</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+      A tactile workbench of ongoing experiments, field recordings, and raw tactile artifacts. Touch any object to inspect its sonic and physical provenance.
+    </p>
+</section>
+<!-- Interactive Studio Desk Canvas -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">pan_tool_alt</span>
+        TACTILE ARTIFACTS MAP (TOUCH TO ENGAGE)
+      </span>
+<span class="font-label-sm text-label-sm text-primary uppercase" id="desk-status">IDLE • TAP DESK OBJECT</span>
+</div>
+<!-- The Workbench Surface Container -->
+<div class="relative w-full rounded-xl bg-surface-container-low shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-space-md overflow-hidden flex flex-col gap-space-md">
+<!-- Ambient Grid Background Mimicking Architectural Paper -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#dfbfbc_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Object 1: Vintage Walkman + Field Tape -->
+<div class="relative group cursor-pointer rounded-lg bg-surface-container-high p-space-md transition-all duration-300 hover:bg-surface-bright shadow-md flex flex-col gap-space-sm" id="obj-walkman" onclick="triggerObject('walkman')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">mobile_share_stack</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">TPS-L2 MOD // 01</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant px-space-xs py-0.5">TYPE II CHROME</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-md bg-surface-container-lowest flex flex-col items-center justify-center relative overflow-hidden shrink-0">
+<div class="w-6 h-6 rounded-full bg-surface-variant absolute left-2 top-7 flex items-center justify-center transition-transform" id="reel-left">
+<span class="material-symbols-outlined text-secondary text-[14px]">settings</span>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-variant absolute right-2 top-7 flex items-center justify-center transition-transform" id="reel-right">
+<span class="material-symbols-outlined text-secondary text-[14px]">settings</span>
+</div>
+<div class="absolute bottom-1 font-label-sm text-[9px] text-tertiary">REC 1998</div>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Field Recordings: 1998 Tokyo Subway</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Magnetic tape with ambient rain on zinc roofs, magnetic hums, and transit announcements.</p>
+<div class="flex items-center gap-space-xs mt-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span id="walkman-action">TAP TO ENGAGE MOTOR</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Object 2 & 3: Two-Column Row (Millimeter Notebook with Coffee Stain & Leica M6) -->
+<div class="grid grid-cols-1 xs:grid-cols-2 gap-space-md">
+<!-- Coffee Ring Grid Notebook -->
+<div class="relative group cursor-pointer rounded-lg bg-surface-container p-space-md shadow-sm transition-all duration-300 hover:bg-surface-container-high flex flex-col justify-between h-44 overflow-hidden" id="obj-notebook" onclick="triggerObject('notebook')">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-secondary-container/30 pointer-events-none blur-[1px] flex items-center justify-center">
+<div class="w-24 h-24 rounded-full bg-surface-container/60"></div>
+</div>
+<div class="flex items-center justify-between z-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase">GRID FOLIO #12</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">coffee</span>
+</div>
+<div class="z-10 flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm italic text-on-surface">"1/125s @ f/2..."</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scribbled focal lengths &amp; dried dark roast mark.</span>
+</div>
+<div class="z-10 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary">COFFEE STAIN: 10:14 AM</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</div>
+</div>
+<!-- Leica M6 Mechanical Camera -->
+<div class="relative group cursor-pointer rounded-lg bg-surface-container p-space-md shadow-sm transition-all duration-300 hover:bg-surface-container-high flex flex-col justify-between h-44 overflow-hidden" id="obj-camera" onclick="triggerObject('camera')">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">LEICA M6 TTL</span>
+<div class="w-3 h-3 rounded-full bg-primary-container flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-center py-2">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-primary/40"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-label-sm" id="shutter-label">COCK SHUTTER</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:animate-ping">photo_camera</span>
+</div>
+</div>
+</div>
+<!-- Object 4: Vinyl Sleeves Drawer Peek -->
+<div class="relative group cursor-pointer rounded-lg bg-surface-container-high p-space-md shadow-md transition-all duration-300 hover:bg-surface-bright flex flex-col gap-space-sm overflow-hidden" id="obj-sleeve" onclick="triggerObject('sleeve')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">folder_zip</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">SLEEVE INSPECTOR</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">350GSM HEAVY MATTE</span>
+</div>
+<div class="relative w-full h-28 rounded-md bg-surface-container-lowest overflow-hidden flex items-center">
+<!-- Slide-out Vinyl Disc Element -->
+<div class="absolute w-24 h-24 rounded-full bg-surface-dim -right-4 flex items-center justify-center transition-transform duration-500 shadow-xl" id="vinyl-disc">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-surface-container-lowest"></div>
+</div>
+</div>
+<!-- Outer Card Sleeve Foreground -->
+<div class="relative z-10 w-3/4 h-full bg-surface-container-highest p-space-sm flex flex-col justify-between shadow-lg">
+<span class="font-label-sm text-label-sm text-secondary">R-129-PRESSING // 04</span>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Obscure Echoes in C Minor</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lacquered by Master Cutter D. Tanaka</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>SPILLED BRASS PINS &amp; 0.5MM ROTRING ON EDGE</span>
+<span class="text-secondary flex items-center gap-1">SLIDE VINYL <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Drawer Modal / Object Inspector Toast -->
+<div class="hidden transition-all duration-300 rounded-xl bg-surface-container-high p-space-md shadow-[0_12px_40px_rgba(0,0,0,0.7)] flex flex-col gap-space-sm" id="inspector-overlay">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold" id="inspect-title">ARTIFACT DETAILS</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" onclick="closeInspector()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant" id="inspect-body">Detailed sensory log appears here.</p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary" id="inspect-meta">CURATOR STAMP: VERIFIED</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 text-on-surface">LOC: TRAY-B</span>
+</div>
+</div>
+<!-- Catalogue Archive Section -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">COMPREHENSIVE LEDGER</span>
+<span class="font-label-sm text-label-sm bg-primary-container text-primary px-space-xs py-0.5">42 ENTRIES</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Catalogue Archive</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Preserved tangible prints, limited phonographic sleeves, physical textile works, and real-time computation graphics.
+      </p>
+</div>
+<!-- Search Input Bar -->
+<div class="relative w-full">
+<div class="flex items-center bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant mr-space-xs text-[20px]">search</span>
+<input class="bg-transparent text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md w-full focus:outline-none" id="archive-search" oninput="filterArchive()" placeholder="Search by catalogue code, medium, or title..." type="text"/>
+</div>
+</div>
+<!-- Filter Pills Horizontal Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="cat-pill active-pill whitespace-nowrap px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary transition-colors" data-cat="all" onclick="setArchiveCategory('all')" type="button">All Works (42)</button>
+<button class="cat-pill whitespace-nowrap px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-cat="vinyl" onclick="setArchiveCategory('vinyl')" type="button">Vinyl Sleeves (8)</button>
+<button class="cat-pill whitespace-nowrap px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-cat="photo" onclick="setArchiveCategory('photo')" type="button">35mm Stills (14)</button>
+<button class="cat-pill whitespace-nowrap px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-cat="code" onclick="setArchiveCategory('code')" type="button">Code Shaders (9)</button>
+<button class="cat-pill whitespace-nowrap px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-cat="fiber" onclick="setArchiveCategory('fiber')" type="button">Fiber Objects (11)</button>
+</div>
+<!-- Archival Ledger Table / List -->
+<div class="flex flex-col gap-space-xs" id="archive-container">
+<!-- Item 1: Vinyl Sleeve -->
+<div class="archive-item bg-surface-container-low hover:bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm transition-all duration-200" data-cat="vinyl" data-code="#089-THRD" data-title="Echoes of Copper Dust">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-14 h-14 object-cover rounded shrink-0 bg-surface-container-high" data-alt="Dark moody macro photograph of an embossed archival copper leaf vinyl cover sleeve resting on black linen with dramatic warm side illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOvUooTihw8-2u_S5Mwkc4ni_zxULlxd7XJiMbtRAQpRfPXY9adPZ0VPXEuLyculI_ObozyhBVRrmkSyEBX-GI9uaZLrLMLqCC3i4GLl1-oGd0x_HMbrFY6W0yxuSc0RKW-1085R9BnaQc8Z8Zp8WOLzXf39WCkYsj3fc8Ccz5g5cS-p63W_EjirFwu8suPLSqS--lX4ogVQdDPPq7zu2RqaX5WWgC_xL5v6OTGAw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary">#089-THRD • 2024.11</span>
+<span class="font-title-md text-title-md text-on-surface truncate">Echoes of Copper Dust</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vinyl Sleeve • 12-inch 180g</span>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm bg-surface-container-high text-secondary px-space-xs py-0.5 rounded-none">PRESERVED</span>
+</div>
+</div>
+<!-- Item 2: 35mm Still -->
+<div class="archive-item bg-surface-container-low hover:bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm transition-all duration-200" data-cat="photo" data-code="#104-FOG" data-title="Tsukiji Morning Fog">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-14 h-14 object-cover rounded shrink-0 bg-surface-container-high" data-alt="Grainy 35mm black and white street photograph of early dawn fog rolling across empty wet market streets with high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzG4WJaqruNWIdXeM_E9DjMbpT3ZrtRcSG4dpkSfVySL5FG6iT9j2KP0jvUnqnu9Ry6r4-AMtwuBNYjAMMZABKiTL-Pc1YN-JTGWEWsNu_v5AsGrTbCj1fVeU0Hg2qVaTkSBNzJxGcXwM8oaCTFdD7_WxZFD02iTnjmFZFNsMxnGbIcS-DDTftnUH5IghnX3fWG4Zl6W40M16M4WbgqlYXNO1WshWr8hym3OvUQMQ"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary">#104-FOG • 2023.04</span>
+<span class="font-title-md text-title-md text-on-surface truncate">Tsukiji Morning Fog</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">35mm Silver Gelatin Print</span>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm bg-primary-container text-primary px-space-xs py-0.5 rounded-none">IN VAULT</span>
+</div>
+</div>
+<!-- Item 3: Code Shader -->
+<div class="archive-item bg-surface-container-low hover:bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm transition-all duration-200" data-cat="code" data-code="#042-GLSL" data-title="Simulated Turntable Wow &amp; Flutter">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-14 h-14 object-cover rounded shrink-0 bg-surface-container-high" data-alt="Digital algorithmic abstract generative graphic visual showing concentric dark vinyl grooves with amber chromatic distortion lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_30AJXAk8GaoeK1-RYHONalU4HDOwXFaDJI9ESwlSFLvnyFvrVAYj4fU38hf1zq8wFrLuSRSom-8dBoqGwffhN88_nH3hwUSRdx1RFnQl67FY7jqHHKTJO_nIACF9WRiUroO1jViilaef7UaZu9uB0oVRe3BJ2uI8Hl_kDsBC-Pz-xhB63T_iSCxnX_GBBYqfQcqI5C2q5PGVe01X_areYLl1b1sSxI8vIAc8u9s"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary">#042-GLSL • 2025.01</span>
+<span class="font-title-md text-title-md text-on-surface truncate">Simulated Turntable Wow &amp; Flutter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GLSL Raymarching Audio React</span>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded-none">W.I.P.</span>
+</div>
+</div>
+<!-- Item 4: Fiber Object -->
+<div class="archive-item bg-surface-container-low hover:bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm transition-all duration-200" data-cat="fiber" data-code="#018-WEAV" data-title="Woven Resonance Tapestry No. 3">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-14 h-14 object-cover rounded shrink-0 bg-surface-container-high" data-alt="Extreme closeup of handwoven dark raw wool and brass wire textile hanging on a raw concrete archival gallery wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUYjxDsJtBSASAhi5W1L_ImxBdygix-hkFdnqBnbTfU8sAZ57uATG3fRL0NjFwxPykQJ9fqcLsyZmMr6gO0cZUA1R985wWZhvOnd6PGyXyiW3BOfE97T0MBQS6c8aLplp67yWszUdGyP-yYjZ6q9OWkV7c7BOn-VIiXd6IEmkBAyTNUhXl1-MGEpureWrbw3RvWZ6ZkAhllbz7_NkxtPEOXEkTjVXhdlrs2n_Y8PA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary">#018-WEAV • 2024.08</span>
+<span class="font-title-md text-title-md text-on-surface truncate">Woven Resonance Tapestry No. 3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Raw Indigo Wool &amp; Brass Filament</span>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm bg-surface-container-high text-secondary px-space-xs py-0.5 rounded-none">PRESERVED</span>
+</div>
+</div>
+<!-- Item 5: Vinyl Sleeve -->
+<div class="archive-item bg-surface-container-low hover:bg-surface-container p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm transition-all duration-200" data-cat="vinyl" data-code="#091-MONO" data-title="Mono Frequency Studies">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-14 h-14 object-cover rounded shrink-0 bg-surface-container-high" data-alt="Minimalist typography on heavy textured unbleached cardstock vinyl sleeve in deep burgundy and warm ivory tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLmvGChyl0BPnYQstfvk4Ixa6WBskLBzjQ6FouUBLiO9Carfi2VScV0Fn6LaSMeveefRG6n9l6I7QywrZ2tPuYPobm9hdvepHAz9YH0k4DCVT4QonC8lKpbNFzwwBP31_maS1jUnDorlCar7qIf7Uad2flmzbGd3v9WEPsNJKvT5Vmp_prO0ZAlR90391AZLyN1I-giBLYJEsw5LOuj1_-K25J3kEtWLmKyes8-oU"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary">#091-MONO • 2023.09</span>
+<span class="font-title-md text-title-md text-on-surface truncate">Mono Frequency Studies</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gatefold Double LP</span>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm bg-primary-container text-primary px-space-xs py-0.5 rounded-none">IN VAULT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: "A Person of Many Tabs" Editorial Profile -->
+<section class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">CREATOR DOSSIER</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: DIR-KYOTO-129</span>
+</div>
+<!-- Editorial Intro with Marginalia -->
+<div class="flex flex-col gap-space-xs relative">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface italic">A Person of Many Tabs</span>
+<div class="bg-surface-container-high p-space-sm rounded-md shadow-inner flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">edit_note</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">
+          Marginalia note: "Never close the browser window when the tone is still resonant. Let threads tangle across disciplines."
+        </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+        Architect turned analog archivist, sound excavator, and computational textile weaver. Operating ROOM 129 out of a former bookbinding atelier in Kyoto, transforming forgotten micro-histories into physical objects.
+      </p>
+</div>
+<!-- Current Obsessions List -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">CURRENT OBSESSIONS &amp; FIELD STUDIES</span>
+<div class="grid grid-cols-1 gap-space-xs">
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">radio</span>
+<span class="font-body-sm text-body-sm text-on-surface">Shortwave numbers stations (V02)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4.89 MHz</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">water_drop</span>
+<span class="font-body-sm text-body-sm text-on-surface">Traditional Kakishibu persimmon tannin dyes</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fermenting</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">lens_blur</span>
+<span class="font-body-sm text-body-sm text-on-surface">1960s Canon 50mm f/0.95 'Dream Lens' bokeh</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mounted</span>
+</div>
+</div>
+</div>
+<!-- Drop A Needle Contact Card with Vintage Postal Stamp -->
+<div class="relative bg-surface-container-high p-space-md rounded-lg shadow-xl overflow-hidden flex flex-col gap-space-md">
+<!-- Postal Stamp Corner Graphic -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">TRANSMISSION CARD</span>
+<span class="font-title-md text-title-md text-on-surface">Drop a Needle / Collaborate</span>
+</div>
+<!-- Physical Postal Stamp Element -->
+<div class="relative bg-primary-container p-1 rounded-sm shadow-md flex flex-col items-center justify-center w-16 h-20 text-center shrink-0">
+<div class="w-full h-full bg-surface-container-lowest/80 flex flex-col items-center justify-center p-1">
+<span class="material-symbols-outlined text-primary text-[20px]">mark_email_read</span>
+<span class="font-label-sm text-[8px] text-secondary leading-tight mt-1">ROOM 129 AIR POST</span>
+<span class="font-label-sm text-[7px] text-tertiary">¥ 120</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Have an archival inquiry, master tape lacquer project, or sensory exhibition commission? Send a signal directly to the desk.
+      </p>
+<form class="flex flex-col gap-space-sm" id="contact-form" onsubmit="event.preventDefault(); submitNeedle();">
+<input class="bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm px-space-sm py-2 rounded focus:outline-none" placeholder="Your Name or Studio Moniker" required="" type="text"/>
+<input class="bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm px-space-sm py-2 rounded focus:outline-none" placeholder="Return Frequency (Email Address)" required="" type="email"/>
+<textarea class="bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm px-space-sm py-2 rounded focus:outline-none resize-none" placeholder="Proposed dispatch or field collaboration..." required="" rows="2"></textarea>
+<button class="w-full bg-primary-container hover:bg-primary-container/80 text-primary py-space-sm px-space-md rounded font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-space-xs transition-colors shadow-md" type="submit">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span>IMPRINT DISPATCH &amp; TRANSMIT</span>
+</button>
+</form>
+<div class="hidden font-label-sm text-label-sm text-secondary bg-surface-container-lowest p-space-sm rounded text-center" id="dispatch-toast">
+        DISPATCH STAMPED &amp; LOGGED ON THE KYOTO ROLL. STAND BY FOR RETURN HARMONICS.
+      </div>
+</div>
+</section>
+</div>
+<script>
+  // Interactive Curator Desk Logic
+  function triggerObject(type) {
+    const status = document.getElementById('desk-status');
+    const overlay = document.getElementById('inspector-overlay');
+    const inspectTitle = document.getElementById('inspect-title');
+    const inspectBody = document.getElementById('inspect-body');
+    const inspectMeta = document.getElementById('inspect-meta');
+    
+    overlay.classList.remove('hidden');
+
+    if (type === 'walkman') {
+      const reelL = document.getElementById('reel-left');
+      const reelR = document.getElementById('reel-right');
+      const actionText = document.getElementById('walkman-action');
+      
+      reelL.classList.toggle('rotate-180');
+      reelR.classList.toggle('rotate-180');
+      status.innerText = "CASSETTE MOTOR: SPINNING [4.75 CM/S]";
+      actionText.innerText = "PLAYING: TAPE NOISE + RAIN HARMONICS";
+      inspectTitle.innerText = "SONY TPS-L2 WALKMΑN // 1998 FIELD TAPE";
+      inspectBody.innerText = "Recorded on TDK MA-XG metal cassette. Captured during the late monsoons inside Shibuya transit tunnels. Dual capstan drive calibrated to vintage pitch tolerance.";
+      inspectMeta.innerText = "TAPE HEAD AZIMUTH: ALIGNED (+1.2dB @ 10kHz)";
+    } else if (type === 'camera') {
+      const label = document.getElementById('shutter-label');
+      status.innerText = "CAMERA: 1/125s MECHANICAL CLACK RELEASED";
+      label.innerText = "SHUTTER FIRED (36/36)";
+      inspectTitle.innerText = "LEICA M6 TTL // 0.72 VIEWFINDER";
+      inspectBody.innerText = "Loaded with Tri-X 400 pushed to 1600 ISO. Mechanical cloth shutter fired at 1/125th second. Brass patina revealed on film rewind crank and top plate edge.";
+      inspectMeta.innerText = "APERTURE: f/2.0 SUMMICRON 35MM";
+    } else if (type === 'notebook') {
+      status.innerText = "NOTEBOOK: LOG ENTRY 10:14 AM INSPECTED";
+      inspectTitle.innerText = "MILLIMETER GRAPH FOLIO // ARCHIVAL INK";
+      inspectBody.innerText = "Hand-ruled grid stained by high-altitude Ethiopian blend. Contains notes on room acoustics, resonant frequencies of ceramic plates, and studio layout measurements.";
+      inspectMeta.innerText = "PAPER GRADE: 90GSM ACID-FREE TOMOE RIVER";
+    } else if (type === 'sleeve') {
+      const disc = document.getElementById('vinyl-disc');
+      disc.classList.toggle('translate-x-4');
+      status.innerText = "VINYL DRAWER: 12\" SLIPPED OUT OF SLEEVE";
+      inspectTitle.innerText = "OBSCURE ECHOES IN C MINOR // LACQUER #4";
+      inspectBody.innerText = "Master disc direct from cutting lathe. Stored inside anti-static Japanese rice paper inner sleeve. Etched runout groove reads: 'LISTEN IN THE DARK'.";
+      inspectMeta.innerText = "RPM: 33⅓ • STAMP: FIRST PRESSING";
+    }
+  }
+
+  function closeInspector() {
+    document.getElementById('inspector-overlay').classList.add('hidden');
+    document.getElementById('desk-status').innerText = "IDLE • TAP DESK OBJECT";
+  }
+
+  // Catalogue Archive Filter & Search Logic
+  function setArchiveCategory(cat) {
+    const buttons = document.querySelectorAll('.cat-pill');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-cat') === cat) {
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-secondary', 'text-on-secondary');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+
+    const items = document.querySelectorAll('.archive-item');
+    items.forEach(item => {
+      const itemCat = item.getAttribute('data-cat');
+      if (cat === 'all' || itemCat === cat) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function filterArchive() {
+    const query = document.getElementById('archive-search').value.toLowerCase();
+    const items = document.querySelectorAll('.archive-item');
+    items.forEach(item => {
+      const title = item.getAttribute('data-title').toLowerCase();
+      const code = item.getAttribute('data-code').toLowerCase();
+      if (title.includes(query) || code.includes(query)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // Contact Form Submission Delight Toast
+  function submitNeedle() {
+    const toast = document.getElementById('dispatch-toast');
+    toast.classList.remove('hidden');
+    document.getElementById('contact-form').reset();
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 6000);
+  }
+</script></main><footer class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_32px_rgba(0,0,0,0.6)]"><div class="h-12 px-margin-mobile flex items-center justify-between bg-surface-container-low/95 text-on-surface-variant"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-secondary text-[20px] animate-spin" style="animation-duration: 4s;">album</span><div class="flex items-center gap-space-xs truncate"><span class="font-label-sm text-label-sm text-secondary uppercase">TRACK:</span><span class="font-body-sm text-body-sm text-on-surface truncate">NOSTALGIA DEPT. [02:44]</span></div></div><div class="flex items-center gap-space-sm shrink-0"><span class="material-symbols-outlined text-[18px] text-secondary">equalizer</span><button aria-label="Play or Pause Vinyl Audio" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">pause_circle</span></button></div></div><nav class="flex items-center justify-around h-16 px-space-xs" data-active-classes="text-secondary bg-surface-container-high"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="hub" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-sm text-label-sm uppercase tracking-widest mt-0.5">Hub</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="archive" href="#"><span class="material-symbols-outlined text-[20px]">folder_special</span><span class="font-label-sm text-label-sm uppercase tracking-widest mt-0.5">Archive</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-1 transition-colors text-secondary bg-surface-container-high" data-path="studio-desk" href="#"><span class="material-symbols-outlined text-[20px]">architecture</span><span class="font-label-sm text-label-sm uppercase tracking-widest mt-0.5">Desk</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">auto_stories</span><span class="font-label-sm text-label-sm uppercase tracking-widest mt-0.5">About</span></a></nav></footer></body></html>
